@@ -1,0 +1,95 @@
+:root {
+    --font-family-1: 'Open Sans', sans-serif;
+    --font-family-2: 'Noto Serif', serif;
+    --weight-bold: 700;
+}
+
+@define-mixin font-scale-1 {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+@define-mixin font-scale-2 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+@define-mixin font-scale-3 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+@define-mixin font-scale-4 {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+@define-mixin font-scale-5 {
+    font-size: 27px;
+    line-height: 30px;
+}
+
+@define-mixin headline-1 {
+    font-family: var(--font-family-2);
+    @mixin font-scale-5;
+}
+
+@define-mixin headline-2 {
+    font-family: var(--font-family-1);
+    @mixin font-scale-4;
+}
+
+@define-mixin headline-3 {
+    font-family: var(--font-family-1);
+    @mixin font-scale-3;
+}
+
+@define-mixin headline-4 {
+    font-family: var(--font-family-1);
+    @mixin font-scale-2;
+}
+
+@define-mixin font-scale-b1 {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@define-mixin font-scale-b2 {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+@define-mixin font-scale-b3 {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+@define-mixin body-1 {
+    font-family: var(--font-family-2);
+    font-weight: 400;
+    @mixin font-scale-b3;
+}
+
+@define-mixin body-2 {
+    font-family: var(--font-family-1);
+    @mixin font-scale-b2;
+}
+
+@define-mixin body-3 {
+    font-family: var(--font-family-1);
+    @mixin font-scale-b1;
+}
+
+@define-mixin meta-1 {
+    font-family: var(--font-family-1);
+    font-weight: var(--weight-bold);
+    font-size: 14px;
+    line-height: 1;
+}
+
+@define-mixin meta-2 {
+    font-family: var(--font-family-1);
+    font-weight: var(--weight-bold);
+    font-size: 12px;
+    line-height: 1;
+}
