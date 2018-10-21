@@ -6,7 +6,8 @@
     "author": "Helen Humphrey",
     "scripts": {
         "build": "nuxt build",
-        "precommit": "npm run lint",
+        "commit": "git cz",
+        "precommit": "npm run lint && npm run test",
         "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
         "generate": "nuxt generate",
         "lint": "npm run lint:js && npm run lint:css",
