@@ -65,6 +65,7 @@ module.exports = {
             require('postcss-import'),
             require('postcss-mixins')(),
             require('postcss-nested'),
+            require('postcss-custom-media')()
         ]
     }
 }
