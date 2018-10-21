@@ -2,11 +2,13 @@ const pkg = require('./package')
 
 module.exports = {
     mode: 'universal',
-
     /*
     ** Headers of the page
     */
     head: {
+        htmlAttrs: {
+            lang: 'en',
+        },
         title: pkg.name,
         meta: [
             { charset: 'utf-8' },

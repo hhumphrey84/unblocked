@@ -2,24 +2,31 @@
 @import '../../assets/dimensions.css';
 @import '../../assets/fonts.css';
 
+:root {
+    --logo-dimension: 24px;
+}
+
 .wrapper {
     padding: calc(var(--spacing) * 2);
     margin-bottom: calc(var(--spacing) * 2);
     width: 100%;
 }
 
+.branding {
+    display: flex;
+    flex-direction: row;
+}
+
 .logo {
-    width: 24px;
-    height: 24px;
-    float: left;
+    width: var(--logo-dimension);
+    height: var(--logo-dimension);
     margin-right: var(--spacing);
 }
 
 .title {
     color: var(--color-black);
     font-family: var(--font-family-2);
-    font-size: 24px;
-    line-height: 1em;
+    font-size: 18px;
+    line-height: var(--logo-dimension);
     font-weight: var(--weight-bold);
-    float: left;
 }

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon renders properly 1`] = `
-<svg aria-labelledby="unique-id" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg">
+<svg aria-labelledby="unique-id" data-test-id="test_id" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
   <title id="unique-id">SVG Title</title>
-  <path data-test-id="Icon-slot"></path>
+  <path id="icon-slot"></path>
 </svg>
 `;
