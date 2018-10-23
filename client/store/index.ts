@@ -1,29 +1,22 @@
 import Vuex from 'vuex';
 
-import QuiltSizeStore, { QuiltSizeState } from './modules/QuiltSize.Store';
+import QuiltSizeStore, { IQuiltSizeState } from './modules/QuiltSize.Store';
 
-interface State {}
-
-interface ModulesStateInterface {
-    quiltSize: QuiltSizeState,
+interface IRootState {
+    quiltSize: IQuiltSizeState;
 }
-
-type RootState = ModulesStateInterface & State;
-
-const state = (): State => ({});
 
 const createStore = () => {
     return new Vuex.Store({
-        strict: process.env.NODE_ENV !== 'production',
-        state,
         modules: {
             quiltSize: QuiltSizeStore,
-        }
-    })
-}
+        },
+        strict: process.env.NODE_ENV !== 'production',
+    });
+};
 
 export {
     createStore as default,
-    State,
-    RootState,
+    IState,
+    IRootState,
 };

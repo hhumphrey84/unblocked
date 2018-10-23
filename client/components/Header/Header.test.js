@@ -5,6 +5,6 @@ const wrapper = shallowMount(Header);
 
 describe('Header', () => {
     test('renders properly', () => {
-        expect(wrapper.html()).toMatchSnapshot()
+        expect(wrapper.html()).toMatchSnapshot();
     });
 })

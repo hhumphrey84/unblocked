@@ -1,7 +1,7 @@
-interface QuiltSize {
-    width: number,
-    height: number,
-    id: string,
-};
+interface IQuiltSize {
+    width: number;
+    height: number;
+    id: string;
+}
 
-export default QuiltSize;
+export default IQuiltSize;

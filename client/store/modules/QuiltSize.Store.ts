@@ -1,16 +1,16 @@
 import QuiltSize from './models/QuiltSize';
 
-interface QuiltSizeState {
-    selected: number,
-    sizes: QuiltSize[],
+interface IQuiltSizeState {
+    selected: number;
+    sizes: QuiltSize[];
 }
 
-const state = (): QuiltSizeState => ({
+const state = (): IQuiltSizeState => ({
     selected: 0,
     sizes: [{
-        width: 1,
         height: 2,
         id: 'baby',
+        width: 1,
     }],
 });
 
@@ -21,5 +21,5 @@ const QuiltSizeStore = {
 
 export {
     QuiltSizeStore as default,
-    QuiltSizeState,
+    IQuiltSizeState,
 };
