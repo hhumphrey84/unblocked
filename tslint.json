@@ -10,8 +10,8 @@
         "tslint-eslint-rules"
     ],
     "rules": {
-        "arrow-parens": false,
         "newline-before-return": true,
+        "no-shadowed-variable": false,
         "no-console": [
             true,
             "log"

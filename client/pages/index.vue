@@ -1,15 +1,22 @@
 <template>
     <div>
         <app-header />
+        <quilt-size-selector />
     </div>
 </template>
 
 <script>
-import AppHeader from '~/components/Header/Header.vue'
+    import { mapState } from 'vuex';
 
-export default {
-  components: {
-    AppHeader
-  }
-}
+    import AppHeader from '~/components/Header/Header.vue';
+    import QuiltSizeSelector from '~/features/QuiltSizeSelector/QuiltSizeSelector';
+
+    const components = {
+        AppHeader,
+        QuiltSizeSelector,
+    };
+
+    export default {
+        components,
+    }
 </script>

@@ -17,6 +17,5 @@ const createStore = () => {
 
 export {
     createStore as default,
-    IState,
     IRootState,
 };
