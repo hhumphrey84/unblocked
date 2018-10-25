@@ -2,14 +2,17 @@
     <li
         :aria-selected="isSelected"
         :class="{ focused: isSelected }"
+        :data-test-id="testIds.WRAPPER"
         role="option"
         @click="onClick(data.id)"
     >
-        {{ data.id }} {{ data.width }} x {{ data.height }}
+        {{ description }} {{ data.width }} x {{ data.height }}
     </li>
 </template>
 
 <script>
+    import { QUILT_OPTION_TEST_IDS } from '../../quilt-size.constants';
+
     const props = {
         data: {
             type: Object,
@@ -25,8 +28,20 @@
         },
     };
 
+    const data = {
+        testIds: QUILT_OPTION_TEST_IDS,
+    };
+
+    const computed = {
+        description() {
+            return `Some description: ${this.data.id}`;
+        },
+    };
+
     export default {
         name: 'QuiltSizeOption',
         props,
+        data: () => data,
+        computed,
     };
 </script>

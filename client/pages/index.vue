@@ -9,7 +9,7 @@
     import { mapState } from 'vuex';
 
     import AppHeader from '~/components/Header/Header.vue';
-    import QuiltSizeSelector from '~/features/QuiltSizeSelector/QuiltSizeSelector';
+    import QuiltSizeSelector from '~/features/QuiltSize/QuiltSizeSelector/QuiltSizeSelector';
 
     const components = {
         AppHeader,

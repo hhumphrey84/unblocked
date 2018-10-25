@@ -1,12 +1,9 @@
 <template>
-    <div>
-        <quilt-list
-            :options="options"
-            :selected-option-id="selectedOptionId"
-            :on-option-click="onOptionClick"
-        />
-    </div>
-
+    <quilt-list
+        :options="options"
+        :selected-option-id="selectedOptionId"
+        :on-option-click="onOptionClick"
+    />
 </template>
 
 <script>
@@ -15,7 +12,7 @@
         mapActions,
     } from 'vuex';
 
-    import QuiltList from './QuiltList/QuiltList';
+    import QuiltList from '../QuiltList/QuiltList';
 
     const components = {
         QuiltList,

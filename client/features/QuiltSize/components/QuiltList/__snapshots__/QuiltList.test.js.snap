@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuiltList renders properly 1`] = `
+<div data-test-id="quilt-list">
+  <p id="quiltListLabel" data-test-id="quilt-list__title">
+    Select a quilt list:
+  </p>
+  <ul role="listbox" tabindex="0" aria-labelledby="quiltListLabel" data-test-id="quilt-list__list">
+    <quiltsizeoption-stub data="[object Object]" onclick="function onOptionClick() {
+      return null;
+    }" data-test-id="quilt-list__option"></quiltsizeoption-stub>
+    <quiltsizeoption-stub data="[object Object]" isselected="true" onclick="function onOptionClick() {
+      return null;
+    }" data-test-id="quilt-list__option"></quiltsizeoption-stub>
+    <quiltsizeoption-stub data="[object Object]" onclick="function onOptionClick() {
+      return null;
+    }" data-test-id="quilt-list__option"></quiltsizeoption-stub>
+  </ul>
+</div>
+`;

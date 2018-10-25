@@ -24,6 +24,7 @@
         "collectCoverage": true,
         "collectCoverageFrom": [
             "<rootDir>/client/components/**/*.vue",
+            "<rootDir>/client/features/**/*.vue",
             "<rootDir>/client/pages/*.vue"
         ],
         "moduleFileExtensions": [

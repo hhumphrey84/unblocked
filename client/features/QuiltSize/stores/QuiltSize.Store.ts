@@ -4,41 +4,9 @@ import {
     MutationTree
 } from 'vuex';
 
-import QuiltSize from './models/QuiltSize';
+import { DEFAULT_QUILT_SIZES } from '../quilt-size.constants';
 
-// TODO: move out of this file
-const defaultQuiltSizes = [
-    {
-        height: 52,
-        id: 'baby',
-        width: 36,
-    },
-    {
-        height: 65,
-        id: 'single',
-        width: 50,
-    },
-    {
-        height: 90,
-        id: 'twin',
-        width: 70,
-    },
-    {
-        height: 110,
-        id: 'double',
-        width: 85,
-    },
-    {
-        height: 110,
-        id: 'queen',
-        width: 90,
-    },
-    {
-        height: 110,
-        id: 'king',
-        width: 110,
-    },
-];
+import QuiltSize from './models/QuiltSize';
 
 interface IQuiltSizeState {
     selectedId: string;
@@ -46,8 +14,8 @@ interface IQuiltSizeState {
 }
 
 const state = (): IQuiltSizeState => ({
-    selectedId: defaultQuiltSizes[0].id,
-    sizes: defaultQuiltSizes,
+    selectedId: DEFAULT_QUILT_SIZES[0].id,
+    sizes: DEFAULT_QUILT_SIZES,
 });
 
 const actions: ActionTree<IQuiltSizeState, IRootState> = {
@@ -72,4 +40,5 @@ const QuiltSizeStore = {
 export {
     QuiltSizeStore as default,
     IQuiltSizeState,
+    mutations,
 };

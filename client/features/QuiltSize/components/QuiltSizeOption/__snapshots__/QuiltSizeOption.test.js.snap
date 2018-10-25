@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuiltSizeOption renders properly 1`] = `
+<li data-test-id="quilt-size-option" role="option" class="">
+  Some description: 12345 10 x 100
+</li>
+`;
