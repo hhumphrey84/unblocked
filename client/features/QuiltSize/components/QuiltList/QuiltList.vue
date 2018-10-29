@@ -1,16 +1,21 @@
 <template>
-    <div :data-test-id="testIds.WRAPPER">
+    <div
+        :data-test-id="testIds.WRAPPER"
+        class="wrapper"
+    >
         <p
             id="quiltListLabel"
             :data-test-id="testIds.TITLE"
+            class="list-title"
         >
             Select a quilt list:
         </p>
         <ul
+            :data-test-id="testIds.LIST"
+            class="list"
             role="listbox"
             tabindex="0"
             aria-labelledby="quiltListLabel"
-            :data-test-id="testIds.LIST"
         >
             <quilt-size-option
                 v-for="option of options"
@@ -23,6 +28,8 @@
         </ul>
     </div>
 </template>
+
+<style scoped src="./quilt-list.css"></style>
 
 <script>
     import QuiltSizeOption from '../QuiltSizeOption/QuiltSizeOption';

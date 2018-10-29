@@ -1,0 +1,38 @@
+@import '../../../../assets/colors.css';
+@import '../../../../assets/dimensions.css';
+@import '../../../../assets/fonts.css';
+
+.option {
+    position: relative;
+    padding: calc(var(--spacing) * 2);
+    cursor: pointer;
+
+    &.focused,
+    &:hover {
+        background: var(--color-amazonite);
+    }
+
+    &.focused,
+    &:hover {
+        & .title,
+        & .description {
+            color: var(--color-white);
+        }
+    }
+
+    & .title,
+    & .description {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    & .title {
+        @mixin meta-1;
+        padding: 2px 0 4px;
+    }
+
+    & .description {
+        @mixin meta-2;
+        font-size: 12px;
+    }
+}

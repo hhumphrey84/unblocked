@@ -1,6 +1,6 @@
 import Vuex from 'vuex';
 
-import QuiltSizeStore, { IQuiltSizeState } from './modules/QuiltSize.Store';
+import QuiltSizeStore, { IQuiltSizeState } from '../features/QuiltSize/store/QuiltSize.Store';
 
 interface IRootState {
     quiltSize: IQuiltSizeState;

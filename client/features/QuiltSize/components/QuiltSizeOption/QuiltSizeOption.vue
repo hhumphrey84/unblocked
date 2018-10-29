@@ -3,12 +3,16 @@
         :aria-selected="isSelected"
         :class="{ focused: isSelected }"
         :data-test-id="testIds.WRAPPER"
+        class="option"
         role="option"
         @click="onClick(data.id)"
     >
-        {{ description }} {{ data.width }} x {{ data.height }}
+        <h2 class="title">{{ title }}</h2>
+        <p class="description">{{ description }}</p>
     </li>
 </template>
+
+<style scoped src="./quilt-size-option.css"></style>
 
 <script>
     import { QUILT_OPTION_TEST_IDS } from '../../quilt-size.constants';
@@ -33,8 +37,12 @@
     };
 
     const computed = {
+        title() {
+            return this.data.id;
+        },
+
         description() {
-            return `Some description: ${this.data.id}`;
+            return `${this.data.width}" x ${this.data.height}"`;
         },
     };
 

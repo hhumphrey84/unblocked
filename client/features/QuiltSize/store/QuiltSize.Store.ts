@@ -1,9 +1,3 @@
-import { IRootState } from 'store';
-import {
-    ActionTree,
-    MutationTree
-} from 'vuex';
-
 import { DEFAULT_QUILT_SIZES } from '../quilt-size.constants';
 
 import QuiltSize from './models/QuiltSize';
@@ -18,13 +12,13 @@ const state = (): IQuiltSizeState => ({
     sizes: DEFAULT_QUILT_SIZES,
 });
 
-const actions: ActionTree<IQuiltSizeState, IRootState> = {
-    changeSelected({ commit }, selectedOptionId: string) {
+const actions = {
+    changeSelected({ commit }, selectedOptionId: string): any {
         commit('setSelected', selectedOptionId);
     },
 };
 
-const mutations: MutationTree<IQuiltSizeState> = {
+const mutations = {
     setSelected(state: IQuiltSizeState, payload: string) {
         state.selectedId = payload;
     },
@@ -41,4 +35,5 @@ export {
     QuiltSizeStore as default,
     IQuiltSizeState,
     mutations,
+    actions,
 };

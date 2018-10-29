@@ -25,24 +25,28 @@
         "collectCoverageFrom": [
             "<rootDir>/client/components/**/*.vue",
             "<rootDir>/client/features/**/*.vue",
+            "<rootDir>/client/features/**/*.ts",
             "<rootDir>/client/pages/*.vue"
         ],
         "moduleFileExtensions": [
             "js",
             "json",
-            "vue"
+            "vue",
+            "ts"
         ],
         "moduleNameMapper": {
             "^~/(.*)$": "<rootDir>/client/$1",
             "^~~/(.*)$": "<rootDir>/client/$1"
         },
         "snapshotSerializers": [
-            "<rootDir>/node_modules/jest-serializer-vue"
+            "jest-serializer-vue"
         ],
         "transform": {
-            "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-            ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
-        }
+            "^.+\\.js$": "babel-jest",
+            ".*\\.(vue)$": "vue-jest",
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|js)?$"
     },
     "dependencies": {
         "cross-env": "^5.2.0",
@@ -52,6 +56,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.1.2",
+        "@types/jest": "^23.3.7",
         "@vue/test-utils": "^1.0.0-beta.25",
         "babel-core": "^7.0.0-bridge.0",
         "babel-eslint": "^8.2.1",
@@ -69,6 +74,7 @@
         "start-server-and-test": "^1.7.4",
         "stylelint": "^9.6.0",
         "stylelint-order": "^1.0.0",
+        "ts-jest": "^23.10.4",
         "ts-loader": "^5.2.2",
         "tslint": "^5.11.0",
         "tslint-eslint-rules": "^5.4.0",

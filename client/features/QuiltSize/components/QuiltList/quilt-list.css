@@ -1,0 +1,16 @@
+@import '../../../../assets/mixins.css';
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+        /* TODO: alternate to outline */
+        outline: none;
+    }
+}
+
+.list-title {
+    @mixin usability-hidden;
+}

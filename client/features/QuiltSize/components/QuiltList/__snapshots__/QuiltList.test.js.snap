@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`QuiltList renders properly 1`] = `
-<div data-test-id="quilt-list">
-  <p id="quiltListLabel" data-test-id="quilt-list__title">
+<div data-test-id="quilt-list" class="wrapper">
+  <p id="quiltListLabel" data-test-id="quilt-list__title" class="list-title">
     Select a quilt list:
   </p>
-  <ul role="listbox" tabindex="0" aria-labelledby="quiltListLabel" data-test-id="quilt-list__list">
+  <ul data-test-id="quilt-list__list" role="listbox" tabindex="0" aria-labelledby="quiltListLabel" class="list">
     <quiltsizeoption-stub data="[object Object]" onclick="function onOptionClick() {
       return null;
     }" data-test-id="quilt-list__option"></quiltsizeoption-stub>
