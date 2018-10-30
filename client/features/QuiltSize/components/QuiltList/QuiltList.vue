@@ -33,7 +33,7 @@
 
 <script>
     import QuiltSizeOption from '../QuiltSizeOption/QuiltSizeOption';
-    import { QUILT_LIST_TEST_IDS } from '../../quilt-size.constants';
+    import QuiltListTestIds from '../constants/QuiltListTestIds';
 
     const components = {
         QuiltSizeOption,
@@ -55,7 +55,7 @@
     };
 
     const data = {
-        testIds: QUILT_LIST_TEST_IDS,
+        testIds: QuiltListTestIds,
     };
 
     export default {

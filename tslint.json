@@ -17,12 +17,7 @@
             "log"
         ],
         "object-curly-spacing": ["error", "always"],
-        "ordered-imports": [
-            true,
-            {
-                "grouped-imports": true
-            }
-        ],
+        "ordered-imports": false,
         "quotemark": [
             true,
             "single"

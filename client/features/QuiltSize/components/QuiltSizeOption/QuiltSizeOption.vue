@@ -15,7 +15,7 @@
 <style scoped src="./quilt-size-option.css"></style>
 
 <script>
-    import { QUILT_OPTION_TEST_IDS } from '../../quilt-size.constants';
+    import QuiltOptionTestIds from '../constants/QuiltOptionTestIds';
 
     const props = {
         data: {
@@ -33,7 +33,7 @@
     };
 
     const data = {
-        testIds: QUILT_OPTION_TEST_IDS,
+        testIds: QuiltOptionTestIds,
     };
 
     const computed = {

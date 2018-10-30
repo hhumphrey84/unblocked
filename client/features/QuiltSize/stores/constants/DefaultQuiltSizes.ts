@@ -1,15 +1,6 @@
-export const QUILT_OPTION_TEST_IDS = {
-    WRAPPER: 'quilt-size-option',
-}
+import IQuiltSize from '../types/QuiltSize';
 
-export const QUILT_LIST_TEST_IDS = {
-    WRAPPER: 'quilt-list',
-    LIST: 'quilt-list__list',
-    TITLE: 'quilt-list__title',
-    OPTION: 'quilt-list__option',
-}
-
-export const DEFAULT_QUILT_SIZES = [
+const DefaultQuiltSizes: IQuiltSize[] = [
     {
         height: 52,
         id: 'baby',
@@ -41,3 +32,5 @@ export const DEFAULT_QUILT_SIZES = [
         width: 110,
     },
 ];
+
+export default DefaultQuiltSizes;
