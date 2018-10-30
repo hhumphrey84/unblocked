@@ -3,6 +3,7 @@
         :aria-selected="isSelected"
         :class="{ focused: isSelected }"
         :data-test-id="testIds.WRAPPER"
+        :data-test-value="data.id"
         class="option"
         role="option"
         @click="onClick(data.id)"
