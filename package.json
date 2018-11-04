@@ -52,7 +52,8 @@
         "cross-env": "^5.2.0",
         "micro": "^9.3.3",
         "micro-route": "^2.5.0",
-        "nuxt": "^2.0.0"
+        "nuxt": "^2.0.0",
+        "vuex-persist": "^2.0.0"
     },
     "devDependencies": {
         "@babel/core": "^7.1.2",
