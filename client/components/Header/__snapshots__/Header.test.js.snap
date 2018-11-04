@@ -2,7 +2,7 @@
 
 exports[`Header renders properly 1`] = `
 <header data-test-id="header" class="wrapper">
-  <div class="branding"><span class="logo"><nuxt-link data-test-id="header__homeLink" to="/"><icon-stub datatestid="icon" title="UnBlocked – Back to home" id="headerLogo"><logo-stub></logo-stub></icon-stub></nuxt-link></span>
+  <div class="branding"><span class="logo"><nuxt-link-stub data-test-id="header__homeLink" to="/"><icon-stub datatestid="icon" title="UnBlocked – Back to home" id="headerLogo"><logo-stub></logo-stub></icon-stub></nuxt-link-stub></span>
     <h1 class="title">UnBlocked</h1>
   </div>
 </header>
