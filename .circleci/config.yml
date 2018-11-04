@@ -2,7 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: circleci/node:8.11.2
+    working_directory: ~/hhumphrey84/unblocked
     steps:
       - checkout
       - run:
