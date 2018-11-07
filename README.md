@@ -1,6 +1,6 @@
 # UnBlocked
 
-> UnBlock your first quilt
+> UnBlock your creativity
 
 ## Build Setup
 
